@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct MyMovieApp: App {
+    @StateObject var networkMonitor = NetworkMonitor()
+    @AppStorage("appTheme") private var isDarkModeOn = false
+    @AppStorage("fontSize") private var fontSize = 2.0
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BottomTabBarView().preferredColorScheme(isDarkModeOn ? .dark : .light).environmentObject(networkMonitor)
         }
     }
 }
