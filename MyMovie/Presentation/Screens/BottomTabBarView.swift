@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct BottomTabBarView: View {
+ 
     var body: some View {
         TabView {
-          DiscoverView().tabItem {
+            DiscoverView().tabItem {
              VStack {
                 Image(systemName: "opticaldisc")
                 Text("Discover")
@@ -38,6 +39,6 @@ struct BottomTabBarView: View {
     }
 }
 
-#Preview {
-    BottomTabBarView()
-}
+//#Preview {
+//    BottomTabBarView()
+//}

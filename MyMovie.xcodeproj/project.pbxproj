@@ -31,6 +31,9 @@
 		E17940FD2B7CE3FD00B9BBD2 /* RetryNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17940FC2B7CE3FD00B9BBD2 /* RetryNetworkView.swift */; };
 		E17941052B7CFCAB00B9BBD2 /* MoviesData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E17941032B7CFCAB00B9BBD2 /* MoviesData.xcdatamodeld */; };
 		E17941132B7D02C800B9BBD2 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17941122B7D02C800B9BBD2 /* CoreDataManager.swift */; };
+		E17D20312B7DE5B100933B24 /* CoreDataUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17D20302B7DE5B100933B24 /* CoreDataUseCase.swift */; };
+		E17D20332B7DE5F100933B24 /* MovieCoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17D20322B7DE5F100933B24 /* MovieCoreDataModel.swift */; };
+		E1B822DE2B7E4A4900D33259 /* MovieHorizontalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B822DD2B7E4A4900D33259 /* MovieHorizontalCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,9 @@
 		E17940FC2B7CE3FD00B9BBD2 /* RetryNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryNetworkView.swift; sourceTree = "<group>"; };
 		E17941042B7CFCAB00B9BBD2 /* Movies.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Movies.xcdatamodel; sourceTree = "<group>"; };
 		E17941122B7D02C800B9BBD2 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		E17D20302B7DE5B100933B24 /* CoreDataUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataUseCase.swift; sourceTree = "<group>"; };
+		E17D20322B7DE5F100933B24 /* MovieCoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCoreDataModel.swift; sourceTree = "<group>"; };
+		E1B822DD2B7E4A4900D33259 /* MovieHorizontalCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieHorizontalCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +173,7 @@
 		E17940D52B7CCA0C00B9BBD2 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				E18D555F2B7DF9FB004DD9BF /* Widgets */,
 				E17940DD2B7CCAD400B9BBD2 /* ViewModel */,
 				E17940DE2B7CCB5C00B9BBD2 /* Screens */,
 			);
@@ -212,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				E17940EE2B7CCC9E00B9BBD2 /* PopularMovieModel.swift */,
+				E17D20322B7DE5F100933B24 /* MovieCoreDataModel.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -220,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				E17940DF2B7CCB9000B9BBD2 /* MovieUseCase.swift */,
+				E17D20302B7DE5B100933B24 /* CoreDataUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -280,6 +289,14 @@
 				E17941122B7D02C800B9BBD2 /* CoreDataManager.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		E18D555F2B7DF9FB004DD9BF /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				E1B822DD2B7E4A4900D33259 /* MovieHorizontalCardView.swift */,
+			);
+			path = Widgets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,14 +440,17 @@
 				E17940AC2B7CC9FB00B9BBD2 /* MyMovieApp.swift in Sources */,
 				E17941052B7CFCAB00B9BBD2 /* MoviesData.xcdatamodeld in Sources */,
 				E17940EA2B7CCBE400B9BBD2 /* MovieNetworkService.swift in Sources */,
+				E17D20332B7DE5F100933B24 /* MovieCoreDataModel.swift in Sources */,
 				E17940FB2B7CE2FD00B9BBD2 /* SettingsView.swift in Sources */,
 				E17940FD2B7CE3FD00B9BBD2 /* RetryNetworkView.swift in Sources */,
 				E17940F72B7CE2E700B9BBD2 /* ArtistView.swift in Sources */,
 				E17940F52B7CE2D100B9BBD2 /* DiscoverView.swift in Sources */,
 				E17940F12B7CCFB700B9BBD2 /* PopularMovieViewModel.swift in Sources */,
+				E17D20312B7DE5B100933B24 /* CoreDataUseCase.swift in Sources */,
 				E17940EB2B7CCBE400B9BBD2 /* MovieService.swift in Sources */,
 				E17940F92B7CE2F200B9BBD2 /* FavoriteView.swift in Sources */,
 				E17940E72B7CCBE400B9BBD2 /* MovieFetchState.swift in Sources */,
+				E1B822DE2B7E4A4900D33259 /* MovieHorizontalCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

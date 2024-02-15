@@ -8,11 +8,22 @@
 import SwiftUI
 
 struct FavoriteView: View {
+    // Core Data
+    //@EnvironmentObject var persistentController: MoviePersistentController
+    @FetchRequest(sortDescriptors: []) private var movieTodos: FetchedResults<MoviesData>
+
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            Section(header: Text("Popular Movies")){
+                ForEach(movieTodos) { movie in
+                    Text(movie.title ?? "")
+                }
+            }
+        }
     }
 }
 
-#Preview {
-    FavoriteView()
-}
+//#Preview {
+//    FavoriteView()
+//}
